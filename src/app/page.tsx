@@ -1,12 +1,11 @@
 "use client"
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import BarcodeScannerComponent from "react-qr-barcode-scanner";
+//import BarcodeScannerComponent from "react-qr-barcode-scanner";
 import ScanbotSDKService from "./services/scanbot-sdk-service";
 
 
 export default function Home() {
-  const [data, setData] = useState("Not Found");
 
   useEffect(() => {
 		async function loadSDK() {
