@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect } from "react";
 
 
@@ -14,7 +12,7 @@ export default function BarcodeScanner() {
         ScanbotSDKService.instance.createBarcodeScanner("barcode-scanner", async (barcode) => {
             const base64Image = await ScanbotSDKService.instance.sdk?.toDataUrl(barcode.barcodeImage);
             toast(`Detected code: ${barcode.text} (${barcode.format})`, {
-                icon: ({theme, type}) =>  <Image width={25} height={25} src={base64Image!} alt="X"/>
+                icon: ({theme, type}) =>  <Image width={25} height={25} src={base64Image!} alt={`${theme} ${type}`}/>
               });
         });
 
