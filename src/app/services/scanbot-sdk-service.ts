@@ -79,11 +79,12 @@ export default class ScanbotSDKService {
                     highlightedTextColor: '#EC3D67',
                     highlightedPolygonStrokeColor: '#3DEC4A'
                 },
-                onBarcodeFound(code, polygon, label) {
+                onBarcodeFound(code) {
                     // If overlay is visible and automatic selection is disabled, this callback will be called.
                     // The found overlay can be styled via the 'polygon' and 'label' parameters.
                     // However, in this case we just return the code to the view and show a toast
                     onBarcodeFound(code);
+
                 },
             },
             returnBarcodeImage: true,

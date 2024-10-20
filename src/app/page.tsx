@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 //import BarcodeScannerComponent from "react-qr-barcode-scanner";
 import ScanbotSDKService from "./services/scanbot-sdk-service";
 
