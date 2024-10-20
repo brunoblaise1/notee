@@ -12,7 +12,7 @@ export default function Home() {
         width={500}
         height={500}
         onUpdate={(err, result) => {
-          if (result) setData(result?.text);
+          if (result) setData("something");
           else setData("Not Found");
         }}
       />
